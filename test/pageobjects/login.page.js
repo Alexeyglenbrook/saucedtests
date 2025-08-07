@@ -13,10 +13,14 @@ class LoginPage extends Page {
     return $('#login-button');
   }
 
-  get errorMessage() {
-    return $(
-      `//*[contains(text(),'Epic sadface: Username and password do not match any user in this service')]`
-    );
+
+  get errorContainer() {
+    return $('.error-message-container');
+  }
+
+  async getErrorMessage() {
+    await this.errorContainer.waitForDisplayed({ timeout: 3000 });
+    return await this.errorContainer.getText();
   }
 
   async login(username, password) {
