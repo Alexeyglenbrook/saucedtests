@@ -1,0 +1,25 @@
+npm run wdio
+Epic sadface: Username and password do not match any user in this service
+
+npx wdio run wdio.conf.js --spec ./test/specs/burger.js
+
+npx wdio run wdio.conf.js --spec ./test/specs/add_cart_logout_restore_cart.js
+npx wdio run wdio.conf.js --spec ./test/specs/sort.products.js
+
+npx wdio wdio.conf.js --spec ./test/specs/social.js
+
+npx wdio wdio.conf.js --spec ./test/specs/login.negative2.js
+npx wdio wdio.conf.js --spec ./test/specs/checkout.js
+
+
+Epic sadface: Username and password do not match any user in this service
+
+
+
+	'./test/specs/login.js',
+        './test/specs/login.negative.js',
+        './test/specs/login.negative.js',
+        './test/specs/burger.js',
+        './test/specs/checkout.e2e.js'
+	'./test/specs/checkout.js'
+
